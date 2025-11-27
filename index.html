@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de PDF desde CSV</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Inventario desde CSV</h1>
+      <p>Carga un archivo exportado de Homebox y genera un PDF con cada ubicación y su lista de items.</p>
+    </div>
+    <button id="generateBtn" class="primary" disabled>Generar PDF</button>
+  </header>
+
+  <section class="controls">
+    <label class="file-input">
+      <span>Selecciona el CSV</span>
+      <input type="file" id="csvInput" accept=".csv" />
+    </label>
+    <p class="hint">El PDF mostrará la ubicación como cabecera y, debajo, una lista con el nombre del item y su cantidad.</p>
+  </section>
+
+  <main id="preview" class="preview" aria-live="polite">
+    <p class="placeholder">Carga un archivo CSV para ver la vista previa.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
