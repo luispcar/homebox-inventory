@@ -147,7 +147,7 @@ function renderPreview(grouped) {
 
       const qty = document.createElement("span");
       qty.className = "item-qty";
-      qty.textContent = `Cantidad: ${item.quantity}`;
+      qty.textContent = `x${item.quantity}`;
 
       li.appendChild(name);
       li.appendChild(qty);

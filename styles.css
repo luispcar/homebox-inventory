@@ -115,7 +115,7 @@ body {
 
 .location-title {
   margin: 0 0 0.8rem;
-  font-size: 1.1rem;
+  font-size: clamp(1.3rem, 2.6vw, 1.65rem);
 }
 
 .item-list {
@@ -142,6 +142,9 @@ body {
 
 .item-qty {
   color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
 }
 
 @media (max-width: 640px) {
